@@ -5,7 +5,6 @@ import { announcementBanner } from '@/lib/constants'
 
 export function AnnouncementBanner() {
   const [isVisible, setIsVisible] = useState(true)
-  const hideLink = process.env.NEXT_PUBLIC_HIDE_LINK === 'true'
 
   useEffect(() => {
     // Show banner on every page load
@@ -36,31 +35,29 @@ export function AnnouncementBanner() {
       <div className="announcement-banner-container">
         <p className="announcement-banner-text">
           {announcementBanner.text}
-          {!hideLink && (
-            <a
-              href={announcementBanner.link}
-              onClick={handleLinkClick}
-              className="announcement-banner-link"
-              target="_blank"
-              rel="noopener noreferrer"
+          <a
+            href={announcementBanner.link}
+            onClick={handleLinkClick}
+            className="announcement-banner-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.25 3.5H1.75C1.33579 3.5 1 3.83579 1 4.25V12.25C1 12.6642 1.33579 13 1.75 13H9.75C10.1642 13 10.5 12.6642 10.5 12.25V8.75M8.75 1H13M13 1V5.25M13 1L5.25 8.75"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </a>
-          )}
+              <path
+                d="M5.25 3.5H1.75C1.33579 3.5 1 3.83579 1 4.25V12.25C1 12.6642 1.33579 13 1.75 13H9.75C10.1642 13 10.5 12.6642 10.5 12.25V8.75M8.75 1H13M13 1V5.25M13 1L5.25 8.75"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
         </p>
         <button
           onClick={handleClose}

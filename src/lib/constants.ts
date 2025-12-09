@@ -12,7 +12,7 @@ export const siteConfig = {
 
 export const announcementBanner = {
   text: "SuperBryn raises 1.2 M USD from Kalaari Capital",
-  link: "#", // Update this with the actual link when available
+  link: "https://economictimes.indiatimes.com/tech/funding/voice-ai-startup-superbryn-raises-1-2-million-from-kalaari-capital-angels/articleshow/125872445.cms?from=mdr",
 }
 
 export const navLinks = [

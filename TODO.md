@@ -82,4 +82,11 @@
 - Added VOICE_WIDGET feature flag to hide/show voice agent widget (set to false by default)
 - Initialized git repository and pushed code to GitHub (https://github.com/superbryndev02/superbryn-website.git)
 - Fixed build error by adding `disabled` prop to Button component to support form submission states
+- Fixed favicon and logo 404 errors on Netlify by updating to use local assets from public/images directory
+- Updated Navigation and Footer components to use local logo file (/images/superbryn_logo.png) instead of external URL
+- Configured favicon metadata in layout.tsx to reference favicon files from /images/ directory
+- Added icon.ico and apple-icon.png to src/app/ directory for Next.js 15 file-based metadata support
+- Updated announcement banner link to Economic Times article URL (https://economictimes.indiatimes.com/tech/funding/voice-ai-startup-superbryn-raises-1-2-million-from-kalaari-capital-angels/articleshow/125872445.cms?from=mdr)
+- Removed NEXT_PUBLIC_HIDE_LINK feature flag - announcement banner link is now always visible
+- Commented out Privacy and Terms links in Footer component (hidden but code preserved)
 

@@ -14,7 +14,7 @@ export function Navigation() {
       <div className="nav-container">
         <Link href="/" className="logo">
           <Image
-            src="https://superbryn.com/name.png"
+            src="/images/superbryn_logo.png"
             alt="SuperBryn"
             width={160}
             height={40}
