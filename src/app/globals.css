@@ -42,9 +42,10 @@ body {
 }
 
 .announcement-banner-container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,6 +61,8 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  padding-right: 2rem;
+  white-space: nowrap;
 }
 
 .announcement-banner-link {
@@ -101,16 +104,16 @@ body {
 
 @media (max-width: 900px) {
   .announcement-banner-container {
-    padding: 0 1rem;
+    padding: 0 2.5rem;
   }
 
   .announcement-banner-close {
-    right: 1rem;
+    right: 0.5rem;
   }
 
   .announcement-banner-text {
-    font-size: 0.85rem;
-    padding-right: 2rem;
+    font-size: 0.8rem;
+    padding-right: 1rem;
   }
 }
 
@@ -122,24 +125,22 @@ body {
   }
 
   .announcement-banner-container {
-    padding: 0 0.75rem;
-    gap: 0.5rem;
+    padding: 0 2rem;
+    gap: 0.25rem;
   }
 
   .announcement-banner-text {
-    font-size: 0.72rem;
-    padding-right: 1.5rem;
-    text-align: center;
-    line-height: 1.2;
+    font-size: 0.68rem;
+    padding-right: 0.5rem;
   }
 
   .announcement-banner-close {
-    right: 0.5rem;
+    right: 0.35rem;
   }
 
   .announcement-banner-link svg {
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
   }
 }
 
