@@ -80,4 +80,6 @@
 - Added HIDE_LINK feature flag to hide announcement banner link button (controlled via NEXT_PUBLIC_HIDE_LINK environment variable)
 - Added HIDE_LINK feature flag to hide Privacy and Terms links in footer (controlled via NEXT_PUBLIC_HIDE_LINK environment variable)
 - Added VOICE_WIDGET feature flag to hide/show voice agent widget (set to false by default)
+- Initialized git repository and pushed code to GitHub (https://github.com/superbryndev02/superbryn-website.git)
+- Fixed build error by adding `disabled` prop to Button component to support form submission states
 
