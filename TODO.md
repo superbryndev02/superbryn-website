@@ -50,7 +50,7 @@
 - [ ] Implement view transitions
 
 ### Analytics & Tracking
-- [ ] Add Google Analytics or Plausible
+- [x] Add Google Analytics or Plausible
 - [ ] Set up conversion tracking for demo bookings
 
 ---
@@ -96,4 +96,5 @@
 - Scaled announcement banner text smaller on iPhone-sized screens (≤420px) to prevent 2-line wrapping
 - Removed gap between announcement banner and nav header with fixed height values
 - Updated mobile menu background to match site's dark purple gradient (#171539 to #222230)
+- Added Google Analytics 4 integration with GoogleAnalytics component using Next.js Script component
 

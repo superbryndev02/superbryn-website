@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { siteConfig } from '@/lib/constants'
 import { AnnouncementBanner } from '@/components/sections'
+import { GoogleAnalytics } from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -117,6 +118,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleAnalytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
