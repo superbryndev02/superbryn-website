@@ -93,4 +93,7 @@
 - Mobile menu slides in from right with smooth animation, dark overlay, all nav links and Book a Demo button
 - Minimalist close button (white X, top-right), centered menu text, fixed z-index for all elements
 - Hamburger icon stays as hamburger (doesn't transform to X) - close button is in the menu panel
+- Scaled announcement banner text smaller on iPhone-sized screens (≤420px) to prevent 2-line wrapping
+- Removed gap between announcement banner and nav header with fixed height values
+- Updated mobile menu background to match site's dark purple gradient (#171539 to #222230)
 
