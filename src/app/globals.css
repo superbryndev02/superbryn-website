@@ -33,7 +33,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 101;
+  z-index: 98;
   background: linear-gradient(135deg, #171539 0%, #222230 100%);
   border-bottom: 1px solid #2c2c3f;
   padding: 0.75rem 0;
@@ -118,7 +118,8 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 99;
+  background: transparent;
   backdrop-filter: blur(12px);
   transition: top 0.3s ease;
 }
@@ -1188,18 +1189,124 @@ footer {
   border: none;
   cursor: pointer;
   padding: 0.5rem;
+  position: relative;
+  z-index: 101;
 }
 
 .mobile-menu-btn svg {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 @media (max-width: 900px) {
   .mobile-menu-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  animation: mobileMenuFadeIn 0.25s ease-out forwards;
+}
+
+.mobile-menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  max-width: 85vw;
+  background: #111111;
+  padding: 4rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  animation: mobileMenuSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: opacity 0.2s;
+  z-index: 10001;
+}
+
+.mobile-menu-close:hover {
+  opacity: 0.7;
+}
+
+.mobile-menu-close svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 10001;
+  align-items: center;
+}
+
+.mobile-menu-link {
+  display: block;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:active {
+  color: #41E5E4 !important;
+}
+
+.mobile-menu-panel .btn {
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1rem;
+  position: relative;
+  z-index: 10001;
+}
+
+@keyframes mobileMenuFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes mobileMenuSlideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
 }
 
 /* ========== SPINNER ANIMATION ========== */

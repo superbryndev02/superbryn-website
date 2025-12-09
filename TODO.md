@@ -89,4 +89,8 @@
 - Updated announcement banner link to Economic Times article URL (https://economictimes.indiatimes.com/tech/funding/voice-ai-startup-superbryn-raises-1-2-million-from-kalaari-capital-angels/articleshow/125872445.cms?from=mdr)
 - Removed NEXT_PUBLIC_HIDE_LINK feature flag - announcement banner link is now always visible
 - Commented out Privacy and Terms links in Footer component (hidden but code preserved)
+- Rebuilt mobile hamburger menu using React Portal for proper z-index handling
+- Mobile menu slides in from right with smooth animation, dark overlay, all nav links and Book a Demo button
+- Minimalist close button (white X, top-right), centered menu text, fixed z-index for all elements
+- Hamburger icon stays as hamburger (doesn't transform to X) - close button is in the menu panel
 
