@@ -96,5 +96,5 @@
 - Scaled announcement banner text smaller on iPhone-sized screens (≤420px) to prevent 2-line wrapping
 - Removed gap between announcement banner and nav header with fixed height values
 - Updated mobile menu background to match site's dark purple gradient (#171539 to #222230)
-- Added Google Analytics 4 integration with GoogleAnalytics component using Next.js Script component
+- Added Google Analytics 4 integration with GoogleAnalytics component using Next.js Script component (Measurement ID: G-WJV46W6VT3)
 
