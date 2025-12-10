@@ -97,4 +97,5 @@
 - Removed gap between announcement banner and nav header with fixed height values
 - Updated mobile menu background to match site's dark purple gradient (#171539 to #222230)
 - Added Google Analytics 4 integration with GoogleAnalytics component using Next.js Script component (Measurement ID: G-WJV46W6VT3)
+- Fixed newsletter form subscribe button overflow on mobile by stacking form vertically and making button full width on screens ≤900px
 

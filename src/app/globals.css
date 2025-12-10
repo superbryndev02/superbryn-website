@@ -1212,6 +1212,26 @@ footer {
   .newsletter-section .section-desc {
     max-width: 90%;
   }
+
+  .newsletter-section .section-container {
+    padding: 40px 1rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .newsletter-form .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* ========== MOBILE MENU ========== */
